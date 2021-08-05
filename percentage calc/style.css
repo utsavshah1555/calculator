@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    background-color: rgb(59, 240, 149);
+    width: 100vw;
+    height: 100vh;
+   
+}
+.box{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    background: rgba(0, 0, 0, 0.9);
+    width: 800px;
+    height: 400px;
+    border-radius:12px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.575);
+}
+.left-side{
+    color: rgb(29, 201, 43);
+    position: absolute;
+    top:25%;
+    width: 40%;
+    text-transform: capitalize;
+    left:10%;
+    border-left:5px solid rgb(189, 226, 24);
+    font-size: 40px;
+    padding: 10px;
+    animation: zoom 2s infinite ease;
+
+}
+@keyframes zoom {
+    0%
+    {
+        transform: scaleX(1);
+    }
+    75%
+    {
+        transform: scale3d(1.10,1.10,1.10);
+        animation-delay: 5s;
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+.right-side
+{
+    width:60%;
+    float: right;
+    margin: 5% -13%;
+    
+
+}
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid yellowgreen;
+    margin-top: 10px;
+    padding: 10px;
+    height: 25px;
+    width: 50%;
+    caret-color:yellow;
+    letter-spacing: 1px;
+    color: white;
+    font-size: medium;
+
+}
+#btn{
+    background: transparent;
+    color: tomato;
+    border: 2px dashed #fff;
+    padding: 20px;
+    font-size: larger;
+    line-height: 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 50%;
+    cursor: pointer;
+}
+::placeholder{
+    color:rgba(233, 225, 213, 0.473);
+    text-transform: capitalize;
+}
+span#show{
+    color:#fff;
+    font-size: 25px;
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+
+}
+@media (max-width:600px)
+{
+    .box{
+        height:650px;
+       width:90%;
+       position:absolute;
+       left: 5%;
+       top:10%;
+    }    
+    .right-side{
+        position: absolute;
+        left:30%;
+        top:40%;
+    }
+    .left-side{
+        position: absolute;
+        top: 5%;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    input{
+        width: 100%;
+    }
+    #btn{
+        width: 100%;
+    }
+}
